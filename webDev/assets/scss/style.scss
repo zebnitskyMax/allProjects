@@ -1,0 +1,47 @@
+@import './base/normalize';
+@import './base/constants';
+
+
+@import './components/wrapper';
+@import './layout/header';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

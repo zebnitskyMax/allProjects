@@ -1,0 +1,24 @@
+.header {
+    background: $color-bg-header;
+
+    .header-wrap {
+        .header__links {
+            .header__nav {
+
+                .header-list {
+                    text-align: center;
+                    padding: 0;
+
+                    .header__item {
+                        display: inline-block;
+
+                        .header__link {
+                            color: $color-header-link;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
