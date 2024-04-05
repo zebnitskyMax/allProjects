@@ -1,0 +1,40 @@
+.main {
+    .socials {
+        background: $color-bg-dark;
+        position: relative;
+
+        .socials-wrap {
+            margin: 0 auto;
+        }
+
+        .social__container-text {
+            position: absolute;
+            top: 220px;
+            left: 21%;
+
+            .social__title {
+                font-weight: 700;
+                font-size: 64px;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+                text-align: center;
+                color: $color-text-white;
+            }
+        }
+
+        .social__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            margin: 20px auto 30px;
+            color: #fff;
+            width: 60%;
+            text-align: center;
+        }
+
+        .social__btn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

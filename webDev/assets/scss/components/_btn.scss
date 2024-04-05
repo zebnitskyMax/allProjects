@@ -1,0 +1,18 @@
+.btn {
+    padding: 15px 47px;
+    width: 184px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    background: $color-bg-btn;
+    border: none;
+    color: $color-text-white;
+    transition: .4s all;
+
+    &:hover {
+        cursor: pointer;
+        background: $color-bg-btn-hover;
+    }
+}

@@ -339,23 +339,86 @@ template {
 }
 
 .wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.btn {
+  padding: 15px 47px;
+  width: 184px;
+  height: 46px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #00afdb;
+  border: none;
+  color: #fff;
+  transition: 0.4s all;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #009cc2;
 }
 
 .header {
   background: #000;
 }
-.header .header-wrap .header__links .header__nav .header-list {
-  text-align: center;
-  padding: 0;
+.header .header-wrap .header__links .header__nav {
+  padding-top: 25px;
 }
-.header .header-wrap .header__links .header__nav .header-list .header__item {
-  display: inline-block;
+.header .header-wrap .header__links .header__nav .header-list {
+  padding: 0px 20px 0 88px;
+  width: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 .header .header-wrap .header__links .header__nav .header-list .header__item .header__link {
   color: #fff;
+  font-weight: 400;
   font-size: 1.4rem;
+  line-height: 140%;
+  transition: 0.7s all;
+  padding: 0 0 2px 0;
+}
+.header .header-wrap .header__links .header__nav .header-list .header__item .header__link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.main .socials {
+  background: #000;
+  position: relative;
+}
+.main .socials .socials-wrap {
+  margin: 0 auto;
+}
+.main .socials .social__container-text {
+  position: absolute;
+  top: 220px;
+  left: 21%;
+}
+.main .socials .social__container-text .social__title {
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.main .socials .social__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin: 20px auto 30px;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+}
+.main .socials .social__btn {
+  display: block;
+  margin: 0 auto;
 }
 
 html {
@@ -375,7 +438,7 @@ html {
 }
 
 body {
-  font-family: Roboto sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
 }
