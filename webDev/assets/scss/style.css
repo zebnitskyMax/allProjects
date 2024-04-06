@@ -394,12 +394,12 @@ template {
 .main .socials .socials-wrap {
   margin: 0 auto;
 }
-.main .socials .social__container-text {
+.main .socials .socials-wrap .social__container-text {
   position: absolute;
-  top: 220px;
+  top: 32%;
   left: 21%;
 }
-.main .socials .social__container-text .social__title {
+.main .socials .socials-wrap .social__container-text .social__title {
   font-weight: 700;
   font-size: 64px;
   letter-spacing: 0.07em;
@@ -407,7 +407,7 @@ template {
   text-align: center;
   color: #fff;
 }
-.main .socials .social__text {
+.main .socials .socials-wrap .social__container-text .social__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
@@ -416,9 +416,69 @@ template {
   width: 60%;
   text-align: center;
 }
-.main .socials .social__btn {
+.main .socials .socials-wrap .social__container-text .social__btn {
   display: block;
   margin: 0 auto;
+}
+.main .socials .socials-wrap .social__socials-web {
+  width: 17rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 87%;
+  left: 44.5%;
+}
+.main .socials .socials-wrap .social__socials-web .social-web {
+  width: 20px;
+  height: 20px;
+}
+.main .socials .socials-wrap .social__socials-web .social-web:hover {
+  cursor: pointer;
+}
+.main .socials .socials-wrap .social__socials-web .social-web:hover svg path {
+  fill: #c5c5c5;
+}
+.main .socials .socials-wrap .social__socials-web .social-web:hover svg circle {
+  stroke: #c5c5c5;
+}
+
+.raprresent {
+  background: #fff;
+}
+.raprresent .rappresent-wrap .rappresent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 120px 0 140px;
+}
+.raprresent .rappresent-wrap .rappresent-container .rappresent__text-container {
+  width: 26.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.raprresent .rappresent-wrap .rappresent-container .rappresent__text-container .raprresent__title-h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #373737;
+}
+.raprresent .rappresent-wrap .rappresent-container .rappresent__text-container .raprresent__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #4e4e4e;
+  margin: 20px 0 30px;
+}
+.raprresent .rappresent-wrap .rappresent-container .rappresent__text-container .raprresent__text .rappresent__span-text {
+  font-weight: 700;
+  color: #373737;
+}
+.raprresent .rappresent-wrap .rappresent-container .rappresent__img {
+  width: 26.6%;
+  height: 582px;
 }
 
 html {

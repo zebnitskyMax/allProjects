@@ -1,0 +1,48 @@
+.raprresent {
+    background: $color-bg-white;
+
+    .rappresent-wrap {
+        .rappresent-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 120px 0 140px;
+
+            .rappresent__text-container {
+                width: 26.6%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .raprresent__title-h2 {
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: $color-text-h2;
+                }
+
+                .raprresent__text {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: $color-text-p;
+                    margin: 20px 0 30px;
+
+                    .rappresent__span-text {
+                        font-weight: 700;
+                        color: $color-text-span;
+                    }
+                }
+
+                .raprresent__btn {}
+            }
+
+            .rappresent__img {
+                width: 26.6%;
+                ;
+                height: 582px;
+            }
+        }
+    }
+}
