@@ -1,20 +1,30 @@
-.raprresent {
+.implement-code {
     background: $color-bg-white;
 
-    .rappresent-wrap {
-        .rappresent-container {
+    .implement-code-wrap {
+        .implement-code-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 120px 0 140px;
 
-            .rappresent__text-container {
+            .implement-code__picture {
+                width: 26.6%;
+                height: 582px;
+
+                .implement-code__img {
+                    width: 100%;
+                }
+
+            }
+
+            .implement-code__text-container {
                 width: 26.6%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
 
-                .raprresent__title-h2 {
+                .implement-code__title-h2 {
                     font-weight: 700;
                     font-size: 2.4rem;
                     letter-spacing: 0.04em;
@@ -22,25 +32,16 @@
                     color: $color-text-h2;
                 }
 
-                .raprresent__text {
+                .implement-code__text {
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 140%;
                     color: $color-text-p;
                     margin: 20px 0 30px;
 
-                    .rappresent__span-text {
+                    .implement-code-text {
                         font-weight: 700;
                         color: $color-text-span;
-                    }
-                }
-
-                .rappresent__picture {
-                    width: 26.6%;
-                    height: 582px;
-
-                    .rappresent__img {
-                        width: 100%;
                     }
                 }
             }
