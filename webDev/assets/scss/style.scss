@@ -3,6 +3,7 @@
 
 @import './components/wrapper';
 @import './components/btn';
+@import './components/undeline_hover';
 
 @import './layout/header';
 @import './layout/socials';
@@ -10,6 +11,8 @@
 @import './layout/slider';
 @import './layout/implement';
 @import './layout/newsletter';
+@import './layout/download';
+@import './layout/footer';
 
 html {
     box-sizing: border-box;

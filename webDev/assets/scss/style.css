@@ -347,7 +347,7 @@ template {
   width: 184px;
   height: 46px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   background: #00afdb;
@@ -358,6 +358,11 @@ template {
 .btn:hover {
   cursor: pointer;
   background: #009cc2;
+}
+
+.underline:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
 }
 
 .header {
@@ -566,6 +571,97 @@ template {
   width: 66px;
   height: 46px;
   padding: 0;
+}
+
+.download {
+  background: #f5f6f7;
+}
+.download .download-wrap .download__container .download__title-h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #373737;
+  padding-top: 120px;
+}
+.download .download-wrap .download__container .download__text-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #4e4e4e;
+  margin: 20px 0 30px;
+  padding: 0 34%;
+}
+.download .download-wrap .download__container .download__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-bottom: 180px;
+}
+.download .download-wrap .download__container .download__buttons .apple-button {
+  display: flex;
+  -moz-column-gap: 0;
+       column-gap: 0;
+}
+.download .download-wrap .download__container .download__buttons .apple-button .apple-btn {
+  background-color: #009cc2;
+  padding: 9px 21px;
+}
+.download .download-wrap .download__container .download__buttons .android-button {
+  display: flex;
+  -moz-column-gap: 0;
+       column-gap: 0;
+}
+.download .download-wrap .download__container .download__buttons .android-button .download-android {
+  padding: 0;
+}
+.download .download-wrap .download__container .download__buttons .android-button .android-btn {
+  background-color: #009cc2;
+  padding: 9px 21px;
+}
+
+.footer {
+  background: #000;
+}
+.footer .footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0 81px;
+}
+.footer .footer-wrap .footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer-wrap .footer__list .footer__item:after {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.footer .footer-wrap .footer__list .footer__item:not(:last-child):after {
+  content: "|";
+  color: #818181;
+}
+.footer .footer-wrap .footer__list .footer__item .footer__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+}
+.footer .footer-wrap .footer__logo {
+  color: #fff;
+}
+.footer .footer-wrap .footer__sign .footer__text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  text-align: center;
+  color: #818181;
 }
 
 html {
