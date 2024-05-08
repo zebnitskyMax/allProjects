@@ -1,0 +1,95 @@
+.community {
+    background: $color-bg-gray;
+
+    .community-wrap {
+        .community-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .community__text-container {
+                width: 20%;
+
+                .community-avatar {
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .community__title-h3 {
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    line-height: 125%;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: $color-text-h3;
+                }
+
+                .community__text-p {
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 140%;
+                    text-align: center;
+                    color: $color-text-p;
+                }
+            }
+
+            .community__slider {
+                width: 55%;
+
+                .slider-count {
+                    text-align: right;
+                    margin-right: 100px;
+
+                    .arrow {
+                        border: none;
+                        // pointer-events: none;
+                        background: $color-bg-gray;
+                        cursor: pointer;
+
+                        &:hover {
+                            svg path {
+                                stroke: $color-arrow-hover;
+                            }
+                        }
+                    }
+
+                    .slider-count__increase {
+                        font-weight: 400;
+                        font-size: 1.8rem;
+                        line-height: 100%;
+                        text-align: right;
+                        color: $color-text-span;
+                    }
+
+                    .devide-symbol {}
+
+                    .slider-count__allCount {
+                        font-weight: 400;
+                        font-size: 1.8rem;
+                        line-height: 100%;
+                        color: $color-text-span;
+                    }
+
+                    .right-arrow {}
+                }
+
+                .slider {
+                    // border: 1px solid black;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    overflow: hidden;
+
+                    .slider-line {
+                        display: flex;
+                        column-gap: 30px;
+                        transition: all ease .8s;
+
+                        .slider-img {}
+                    }
+                }
+            }
+        }
+    }
+}
