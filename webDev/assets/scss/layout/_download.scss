@@ -4,21 +4,11 @@
     .download-wrap {
         .download__container {
             .download__title-h2 {
-                font-weight: 700;
-                font-size: 2.4rem;
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
                 text-align: center;
-                color: $color-text-h2;
                 padding-top: 120px;
             }
 
             .download__text-p {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 140%;
-                text-align: center;
-                color: $color-text-p;
                 margin: 20px 0 30px;
                 padding: 0 34%;
             }
@@ -33,8 +23,6 @@
                 .apple-button {
                     display: flex;
                     column-gap: 0;
-
-                    // .download-apple {}
 
                     .apple-btn {
                         background-color: $color-bg-btn-hover;

@@ -11,23 +11,12 @@
                 top: 32%;
                 left: 21%;
 
-                .social__title {
-                    font-weight: 700;
-                    font-size: 64px;
-                    letter-spacing: 0.07em;
-                    text-transform: uppercase;
-                    text-align: center;
-                    color: $color-text-white;
-                }
-
                 .social__text {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 140%;
+                    font-size: 1.8rem;
+                    font-size: calc(1.4rem + 4 *(100vw / 1600));
                     margin: 20px auto 30px;
-                    color: #fff;
+                    color: $color-text-white;
                     width: 60%;
-                    text-align: center;
                 }
 
                 .social__btn {

@@ -343,11 +343,11 @@ template {
 }
 
 .btn {
-  padding: 15px 47px;
+  padding: 15px 1%;
   width: 184px;
   height: 46px;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: calc(0.8rem + 0.375vw);
   text-transform: uppercase;
   text-align: center;
   background: #00afdb;
@@ -370,6 +370,7 @@ template {
   width: 18px;
   height: 2px;
   background-color: #fff;
+  transition: all linear 0.2s;
 }
 
 .burger-wrap {
@@ -380,36 +381,65 @@ template {
   border-radius: 100px;
   padding: 12px;
   width: 44px;
+  margin-left: auto;
 }
 
 .burger-appear__parent-block {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
 }
 
 .burger {
   display: none;
+  position: relative;
 }
 
 .relative {
   position: relative;
-  padding: 20px;
+  padding: 20px 20.8px;
 }
 
-.active:first-child {
+.active {
   position: absolute;
-  top: 45%;
-  left: 31%;
+  left: 30%;
   transition: all linear 0.2s;
+  z-index: 1;
+}
+.active:first-child {
+  top: 45%;
   transform: translateY(50%) rotate(45deg);
 }
 .active:last-child {
-  position: absolute;
-  top: 48%;
-  left: 30%;
-  transition: all linear 0.2s;
+  top: 50%;
   transform: translateY(-50%) rotate(-45deg);
+}
+
+.active-screen-menu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
+  width: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+.hightNavMenu {
+  display: none;
 }
 
 .header {
@@ -454,22 +484,12 @@ template {
   top: 32%;
   left: 21%;
 }
-.main .socials .socials-wrap .social__container-text .social__title {
-  font-weight: 700;
-  font-size: 64px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
 .main .socials .socials-wrap .social__container-text .social__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
+  font-size: 1.8rem;
+  font-size: calc(1.4rem + 0.25vw);
   margin: 20px auto 30px;
   color: #fff;
   width: 60%;
-  text-align: center;
 }
 .main .socials .socials-wrap .social__container-text .social__btn {
   display: block;
@@ -513,18 +533,8 @@ template {
   flex-direction: column;
   justify-content: center;
 }
-.raprresent .rappresent-wrap .rappresent-container .rappresent__text-container .raprresent__title-h2 {
-  font-weight: 700;
-  font-size: 2.4rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #373737;
-}
 .raprresent .rappresent-wrap .rappresent-container .rappresent__text-container .raprresent__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  color: #4e4e4e;
+  text-align: left;
   margin: 20px 0 30px;
 }
 .raprresent .rappresent-wrap .rappresent-container .rappresent__text-container .raprresent__text .rappresent__span-text {
@@ -554,22 +564,6 @@ template {
 .community .community-wrap .community-container .community__text-container .community-avatar {
   display: block;
   margin: 0 auto;
-}
-.community .community-wrap .community-container .community__text-container .community__title-h3 {
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 125%;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #373737;
-}
-.community .community-wrap .community-container .community__text-container .community__text-p {
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 140%;
-  text-align: center;
-  color: #4e4e4e;
 }
 .community .community-wrap .community-container .community__slider {
   width: 55%;
@@ -632,18 +626,8 @@ template {
   flex-direction: column;
   justify-content: center;
 }
-.implement-code .implement-code-wrap .implement-code-container .implement-code__text-container .implement-code__title-h2 {
-  font-weight: 700;
-  font-size: 2.4rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #373737;
-}
 .implement-code .implement-code-wrap .implement-code-container .implement-code__text-container .implement-code__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  color: #4e4e4e;
+  text-align: left;
   margin: 20px 0 30px;
 }
 .implement-code .implement-code-wrap .implement-code-container .implement-code__text-container .implement-code__text .implement-code-text {
@@ -684,7 +668,7 @@ template {
 .newsletter .newsletter-wrap .newsletter__container .newsletter__picture .newsletter__form .form__box #email {
   padding-left: 24px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 140%;
   color: #373737;
 }
@@ -698,20 +682,10 @@ template {
   background: #f5f6f7;
 }
 .download .download-wrap .download__container .download__title-h2 {
-  font-weight: 700;
-  font-size: 2.4rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   text-align: center;
-  color: #373737;
   padding-top: 120px;
 }
 .download .download-wrap .download__container .download__text-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  text-align: center;
-  color: #4e4e4e;
   margin: 20px 0 30px;
   padding: 0 34%;
 }
@@ -810,6 +784,41 @@ body {
 h1 {
   margin: 0;
   padding: 0;
+}
+
+.text-h1 {
+  font-weight: 700;
+  font-size: calc(2.4rem + 2.5vw);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.text-h2 {
+  font-weight: 700;
+  font-size: calc(1.6rem + 0.5vw);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.text-h3 {
+  font-weight: 500;
+  font-size: calc(1.2rem + 0.25vw);
+  line-height: 125%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #373737;
+}
+
+.text-p {
+  font-weight: 400;
+  font-size: calc(0.8rem + 0.375vw);
+  line-height: 140%;
+  text-align: center;
+  color: #4e4e4e;
 }
 
 li {

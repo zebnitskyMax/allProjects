@@ -24,19 +24,8 @@
                 flex-direction: column;
                 justify-content: center;
 
-                .implement-code__title-h2 {
-                    font-weight: 700;
-                    font-size: 2.4rem;
-                    letter-spacing: 0.04em;
-                    text-transform: uppercase;
-                    color: $color-text-h2;
-                }
-
                 .implement-code__text {
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 140%;
-                    color: $color-text-p;
+                    text-align: left;
                     margin: 20px 0 30px;
 
                     .implement-code-text {
