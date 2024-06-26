@@ -1,48 +1,38 @@
-const burger = document.querySelector('.burger-wrap');
-const burgerLines = document.querySelectorAll('.burger-menu__line');
-const navMenu = document.querySelector('.header-list');
-const blockNav = document.querySelector('.header__nav');
-let widthWindow = document.documentElement.clientWidth;
-const html = document.querySelector('html');
-const hightNavMenu = document.querySelectorAll('.hight-item')
-// console.log(navMenu.children[2]);
-// console.log(body);
+const burger = document.querySelector('.burger');
+const burgerHorLine = document.querySelectorAll('.burger-menu__hor-line');
+
+const navLinks = document.querySelector('.header-list');
+const navBlock = document.querySelector('.header__nav');
+const burgerWrap = document.querySelector('.burger-wrap')
+const linkItem = document.querySelectorAll('.link-item');
+
 
 window.addEventListener('resize', (e) => {
     windowSize(e.target.innerWidth)
 });
 
 function windowSize(width) {
-    if (width < 768) {
-        burger.classList.add('burger-appear__parent-block')
-        burgerMenu()
-        disappearNavMenu()
+    if (width <= 768) {
+        navLinks.classList.add('mobile')
+        burger.classList.remove('noneBurgerBtn')
     } else {
-        burger.classList.remove('burger-appear__parent-block');
-        appearNavMenu()
+        navBlock.classList.remove('mobile')
+        navBlock.classList.remove('active-screen-menu')
+        navLinks.classList.remove('mobile')
+        burger.classList.add('noneBurgerBtn')
+        navLinks.classList.remove('appearNavLinkOpenBurger')
     }
 }
 windowSize(window.innerWidth)
 
-function burgerMenu() {
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('relative')
-        blockNav.classList.toggle('active-screen-menu')
-        html.classList.toggle('no_scroll');
-        burgerLines.forEach(el => {
-            el.classList.toggle('active');
-        })
-    })
-}
+burger.addEventListener('click', () => {
+    getCrossBtn()
+})
 
-function disappearNavMenu() {
-    // navMenu.style.display = 'none';
-    hightNavMenu.forEach(elem => {
-        elem.classList.add('hightNavMenu');
-    });
-}
+function getCrossBtn() {
+    navBlock.classList.toggle('mobile');
+    navBlock.classList.toggle('active-screen-menu')
+    navLinks.classList.toggle('mobile')
+    navLinks.classList.toggle('appearNavLinkOpenBurger')
 
-function appearNavMenu() {
-    navMenu.style.display = 'flex';
-    blockNav.style.justifyContent = 'space-between';
 }

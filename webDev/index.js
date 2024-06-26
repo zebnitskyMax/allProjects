@@ -1,12 +1,12 @@
 const img = document.querySelectorAll('.slider-img');
-console.log('amount ' + img.length);
+// console.log('amount ' + img.length);
 const sliderLine = document.querySelector('.slider-line');
 let countAll = document.querySelector('.slider-count__allCount');
 let count = 0;
 let width;
 
 countAll.textContent = img.length;
-console.log(`amount img ${img.length-1}`);
+// console.log(`amount img ${img.length-1}`);
 
 function changeWidth() {
     width = document.querySelector('.slider').offsetWidth;
@@ -49,7 +49,7 @@ function rolSlider() {
 }
 window.onload = function () {
     width = document.querySelector('.slider').offsetWidth;
-    console.log(width)
+    // console.log(width)
     sliderLine.style.width = width * img.length + 120 + 'px';
     img.forEach(elem => {
         elem.style.width = width + 'px';
