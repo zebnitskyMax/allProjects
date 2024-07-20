@@ -1,0 +1,58 @@
+.header {
+    // background-image: url('../../img/noise.png');
+    background: #211f20;
+    // background: #211f20, radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
+    background-size: cover;
+    background-repeat: repeat;
+
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px 0px;
+
+        .logo a {
+            color: $color-h2-logo;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 35px;
+            letter-spacing: 0.06em;
+        }
+
+        .logo-text {
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0.1em;
+            color: $color-logo-text;
+        }
+
+        .header-nav {
+            .header-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .header-item {
+                    margin-left: 35px;
+
+
+                }
+
+                .header-link {
+                    transition: .2s linear;
+
+                    &:hover {
+                        border-bottom: 3px solid $color-bg-underline;
+                    }
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
