@@ -8,6 +8,12 @@
 @import './layout/about';
 @import './layout/our-friends';
 @import './layout/help';
+@import './layout/in-addition';
+@import './layout/footer';
+
+@import './layout/pets-friends';
+
+
 
 
 
@@ -74,12 +80,29 @@ img {
     color: $color-h2-title-dark;
 }
 
+.text-h2-light {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: $color-h2-title-light;
+}
+
 .text-h4-dark {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.06em;
     text-align: center;
     color: $color-h4-dark;
+}
+
+.text-h4-brown {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-h4-brown;
 }
 
 .text-light-brown {
@@ -111,12 +134,40 @@ img {
     color: $color-nav-links;
 }
 
+.text-nav-links.pets {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-nav-links-dark;
+}
+
+.text-oppacity {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-text-oppacity;
+}
+
 .active {
-    border-bottom: 3px solid $color-bg-underline;
+    // padding-bottom: 2px;
+    // border-bottom: 3px solid $color-bg-underline;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background: $color-bg-underline;
+        width: 100%;
+        height: 3px;
+
+    }
 }
 
 .arrow {
-    margin-top: 30px;
+    // margin-top: 30px;
     padding: 19px;
     border-radius: 100px;
     border: 2px solid $color-circle-arrow;
