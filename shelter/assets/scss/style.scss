@@ -65,6 +65,12 @@ img {
     margin: 0 auto;
 }
 
+.text-h1.pets {
+    margin: 0;
+    display: inline;
+    line-height: 0;
+}
+
 .text-h1 {
     font-weight: 400;
     font-size: 44px;
@@ -164,6 +170,10 @@ img {
         height: 3px;
 
     }
+}
+
+.disabled-cursor {
+    cursor: default;
 }
 
 .arrow {
