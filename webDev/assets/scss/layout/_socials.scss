@@ -1,0 +1,56 @@
+.main {
+    .socials {
+        background: $color-bg-dark;
+        position: relative;
+
+        .socials-wrap {
+            margin: 0 auto;
+
+            .social__container-text {
+                position: absolute;
+                top: 32%;
+                left: 21%;
+
+                .social__text {
+                    font-size: 1.8rem;
+                    font-size: calc(1.4rem + 4 *(100vw / 1600));
+                    margin: 20px auto 30px;
+                    color: $color-text-white;
+                    width: 60%;
+                }
+
+                .social__btn {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .social__socials-web {
+                width: 17rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                position: absolute;
+                top: 87%;
+                left: 44.5%;
+
+                .social-web {
+                    width: 20px;
+                    height: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        svg path {
+                            fill: $color-socials-web-hover;
+                        }
+
+                        svg circle {
+                            stroke: $color-socials-web-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

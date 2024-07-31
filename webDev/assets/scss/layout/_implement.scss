@@ -1,0 +1,39 @@
+.implement-code {
+    background: $color-bg-white;
+
+    .implement-code-wrap {
+        .implement-code-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 120px 0 140px;
+
+            .implement-code__picture {
+                width: 26.6%;
+                height: 582px;
+
+                .implement-code__img {
+                    width: 100%;
+                }
+
+            }
+
+            .implement-code__text-container {
+                width: 26.6%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .implement-code__text {
+                    text-align: left;
+                    margin: 20px 0 30px;
+
+                    .implement-code-text {
+                        font-weight: 700;
+                        color: $color-text-span;
+                    }
+                }
+            }
+        }
+    }
+}

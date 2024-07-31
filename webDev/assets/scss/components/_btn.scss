@@ -1,0 +1,20 @@
+.btn {
+    padding: 15px 1%;
+    // width: 24%;
+    width: 184px;
+    height: 46px;
+    font-weight: 700;
+    // font-size: 1.4rem;
+    font-size: calc(0.8rem + 6 *(100vw / 1600));
+    text-transform: uppercase;
+    text-align: center;
+    background: $color-bg-btn;
+    border: none;
+    color: $color-text-white;
+    transition: .4s all;
+
+    &:hover {
+        cursor: pointer;
+        background: $color-bg-btn-hover;
+    }
+}

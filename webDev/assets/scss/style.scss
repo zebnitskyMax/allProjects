@@ -1,0 +1,94 @@
+@import './base/normalize';
+@import './base/constants';
+
+@import './components/wrapper';
+@import './components/btn';
+@import './components/undeline_hover';
+@import './components/burger';
+
+@import './layout/header';
+@import './layout/socials';
+@import './layout/rappresent';
+@import './layout/community';
+@import './layout/implement';
+@import './layout/newsletter';
+@import './layout/download';
+@import './layout/footer';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.text-h1 {
+    font-weight: 700;
+    font-size: calc(2.4rem + 40 * (100vw / 1600));
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-text-white;
+}
+
+.text-h2 {
+    font-weight: 700;
+    font-size: calc(1.6rem + 8 *(100vw / 1600));
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-text-h2;
+}
+
+.text-h3 {
+    font-weight: 500;
+    // font-size: 1.6rem;
+    font-size: calc(1.2rem + 4 * (100vw / 1600));
+    line-height: 125%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-text-h3;
+}
+
+.text-p {
+    font-weight: 400;
+    // font-size: 1.4rem;
+    font-size: calc(0.8rem + 6 *(100vw / 1600));
+    line-height: 140%;
+    text-align: center;
+    color: $color-text-p;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

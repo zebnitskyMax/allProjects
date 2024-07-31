@@ -1,0 +1,51 @@
+.download {
+    background: $color-bg-gray;
+
+    .download-wrap {
+        .download__container {
+            .download__title-h2 {
+                text-align: center;
+                padding-top: 120px;
+            }
+
+            .download__text-p {
+                margin: 20px 0 30px;
+                padding: 0 34%;
+            }
+
+            .download__buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 30px;
+                padding-bottom: 180px;
+
+                .apple-button {
+                    display: flex;
+                    column-gap: 0;
+
+                    .apple-btn {
+                        background-color: $color-bg-btn-hover;
+                        padding: 9px 21px;
+                    }
+                }
+
+                .android-button {
+                    display: flex;
+                    column-gap: 0;
+
+                    .download-android {
+                        padding: 0;
+                    }
+
+                    .android-btn {
+                        background-color: $color-bg-btn-hover;
+                        padding: 9px 21px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
