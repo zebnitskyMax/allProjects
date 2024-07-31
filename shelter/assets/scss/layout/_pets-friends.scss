@@ -22,8 +22,13 @@
             gap: 0 20px;
             padding-bottom: 101px;
 
-            .decibel {
+            .disabled {
                 border: 2px solid $color-pagination-circle-decibel !important;
+
+
+                // .disabled-cursor {
+                //     cursor: default;
+                // }
 
                 &:hover {
                     background: none !important;

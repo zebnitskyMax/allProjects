@@ -7,6 +7,10 @@
             padding: 80px 0 30px;
         }
 
+        .our-friends__h2.pets {
+            padding: 60px 0 30px;
+        }
+
         .our-friends__container {
             display: flex;
             flex-wrap: wrap;
@@ -28,6 +32,11 @@
                         .pet-image {
                             transform: scale(0.9);
                             transition: 0.7s;
+                        }
+
+                        .our-friend_card-btn {
+                            border: none;
+                            background-color: $color-bg-btn;
                         }
                     }
 
