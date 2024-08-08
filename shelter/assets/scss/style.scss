@@ -2,6 +2,7 @@
 @import './base/constants';
 
 @import './components/btn';
+@import './components/burger';
 
 @import './layout/header';
 @import './layout/not-only';
@@ -69,6 +70,7 @@ img {
     margin: 0;
     display: inline;
     line-height: 0;
+    color: $color-bg-ourFriends;
 }
 
 .text-h1 {
@@ -188,3 +190,7 @@ img {
         background: $color-bg-circle-arrow;
     }
 }
+
+// .disabled-nav {
+//     display: none;
+// }
